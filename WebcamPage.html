@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mainnew.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body id="webcampage">
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="square" id="entry">
+            <p class="label">Record a Video Diary</p>
+            <video class="webcam" width="315" height="230" controls>
+                <source src="temp" type="video/mp4">
+            </video>
+        </div>
+        <div class="square" id="entry">
+            <p class="label">Write a Journal Entry</p>
+            <img class="icon" src="journal.svg" alt="Diary">
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="square">
+            <div class="slidecontainer">
+                <input type="range" min="0" max="24" value="0" class="slider" id="myRange">
+            </div>
+            <p class="label">Hours of Exercise: <span id="value"></span></p>
+        </div>
+        <div class="square">
+            <div class="slidecontainer">
+                    <input type="range" min="0" max="24" value="0" class="slider" id="myRangeTwo">
+            </div>
+            <p class="label">Hours of Socialization: <span id="valueTwo"></span></p>
+        </div>
+        <div class="square">
+            <div class="slidecontainer">
+                    <input type="range" min="0" max="24" value="0" class="slider" id="myRangeThree">
+            </div>
+            <p class="label">Hours of Meditation: <span id="valueThree"></span></p>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="new.js"></script>
+</body>
+</html>
